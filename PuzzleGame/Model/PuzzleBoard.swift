@@ -7,9 +7,21 @@
 //
 
 import Foundation
+import UIKit
 
 class PuzzleBoard {
-    var state : [[Int]] = [ [ 1, 2, 3],[ 4, 5, 6],[ 7, 8, 0] ]
+    var state : [[Int]] = [ [ 1, 2, 3],
+                            [ 4, 5, 6],
+                            [ 7, 8, 0] ]
+    var state1 : [[Int]] = [ [ 1, 2, 3],
+    [ 4, 5, 6],
+    [ 7, 8, 0] ]
+    
+    var state2 : [[Int]] = [[1,2,3,4],
+                            [5,6,7,8],
+                            [9,10,11,12],
+                            [13,14,15,0]]
+    
     
     let rows = 3
     let cols = 3
@@ -23,6 +35,17 @@ class PuzzleBoard {
     //get tile for a agiven positions
     func getTile(atRow r: Int, atColumn c: Int) -> Int{
         return state[r][c]
+    }
+    
+    func getPositionRowandColumn(forTile tile: Int) -> (row: Int, column: Int)?{
+        for i in 0..<rows{
+            for j in 0..<cols{
+                if (state[i][j] == tile){
+                    return (row: i, column: j)
+                }
+            }
+        }
+        return (row: 0, column: 0)
     }
     
     func canTileSlidetoTop(atRow r: Int, atColumn c:Int) -> Bool{
@@ -84,22 +107,54 @@ class PuzzleBoard {
     
     func resetBoard() {
         
+        var set = 1
+        for i in 0..<rows{
+            for j in 0..<cols{
+                state[i][j] = set%9
+                set = set + 1
+            }
+        }
+        
     }
     
     func gameSolved() -> Bool{
         var num = 1
         for r in 0..<rows{
             for c in 0..<cols {
-                if (state[r][c] != num%16){
+                if (state[r][c] != num%9){
                     return false
                 }
-                
+                num = num + 1
             }
-            num = num + 1
+            
         }
         return true
-    }
+    } //end of Checking gamesolve
     
+    
+    func shuffle(){
+        
+//        let x = getPositionRowandColumn(forTile: sender.tag)?.row
+//        let y = getPositionRowandColumn(forTile: sender.tag)?.column
+        for _ in 1...100{
+            var movingTiles : [(atRow: Int, atColumn: Int)] = []
+            var numofMovinfTiles : Int = 0
+            for x in 0..<rows{
+                for y in 0..<cols{
+                    if canTileSlide(arRow: x, atColumn: y){
+                        movingTiles.append((x,y))
+                        numofMovinfTiles = numofMovinfTiles + 1
+                    }
+                }
+            }
+            let randomTile = Int(arc4random_uniform(UInt32(numofMovinfTiles)))
+            var moveRow : Int, moveCol :Int
+            moveRow = movingTiles[randomTile].atRow
+            moveCol = movingTiles[randomTile].atColumn
+            slidetheTile(arRow: moveRow, atColumn: moveCol)
+            
+        }
+    }
     
     
     

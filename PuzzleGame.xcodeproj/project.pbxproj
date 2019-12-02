@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020552E62390791900DE75CC /* TutorialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020552E52390791900DE75CC /* TutorialsViewController.swift */; };
+		020552E82391F48400DE75CC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020552E72391F48400DE75CC /* SettingsViewController.swift */; };
+		022A741F2388CBF000C6C823 /* FifteenPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A741E2388CBF000C6C823 /* FifteenPuzzleViewController.swift */; };
+		02696B2423934E61000753D3 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02696B2323934E61000753D3 /* ScoreTableViewCell.swift */; };
+		02696B2623935D5C000753D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02696B2523935D5B000753D3 /* SceneDelegate.swift */; };
 		028F66982380D00800FFEF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028F66972380D00800FFEF75 /* AppDelegate.swift */; };
-		028F669A2380D00800FFEF75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028F66992380D00800FFEF75 /* SceneDelegate.swift */; };
 		028F669C2380D00800FFEF75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028F669B2380D00800FFEF75 /* ViewController.swift */; };
 		028F669F2380D00800FFEF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028F669D2380D00800FFEF75 /* Main.storyboard */; };
 		028F66A22380D00800FFEF75 /* PuzzleGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 028F66A02380D00800FFEF75 /* PuzzleGame.xcdatamodeld */; };
@@ -18,6 +22,14 @@
 		028F66BD2380D00B00FFEF75 /* PuzzleGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028F66BC2380D00B00FFEF75 /* PuzzleGameUITests.swift */; };
 		028F66CB2380D27400FFEF75 /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028F66CA2380D27400FFEF75 /* PuzzleViewController.swift */; };
 		028F66CD2380E88100FFEF75 /* PuzzleBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028F66CC2380E88100FFEF75 /* PuzzleBoard.swift */; };
+		02940BC423823600001C8214 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02940BC323823600001C8214 /* UIButton+Extension.swift */; };
+		02940BC7238259D2001C8214 /* Electrical_Sweep-Sweeper-1760111493.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02940BC6238259D2001C8214 /* Electrical_Sweep-Sweeper-1760111493.mp3 */; };
+		02940BC923832D3B001C8214 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02940BC823832D3B001C8214 /* UIImage+Extension.swift */; };
+		02BD6CE02393319900D11329 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CDF2393319900D11329 /* CoreDataManager.swift */; };
+		02BD6CE22393365A00D11329 /* CoreDataManager+Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CE12393365A00D11329 /* CoreDataManager+Score.swift */; };
+		02BD6CE423933D6500D11329 /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CE323933D6500D11329 /* ScoreController.swift */; };
+		02BD6CE623933F2D00D11329 /* DataReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CE523933F2D00D11329 /* DataReceiver.swift */; };
+		02BD6CE823934C7200D11329 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CE723934C7200D11329 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020552E52390791900DE75CC /* TutorialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsViewController.swift; sourceTree = "<group>"; };
+		020552E72391F48400DE75CC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		022A741E2388CBF000C6C823 /* FifteenPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifteenPuzzleViewController.swift; sourceTree = "<group>"; };
+		02696B2323934E61000753D3 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		02696B2523935D5B000753D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		028F66942380D00800FFEF75 /* PuzzleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		028F66972380D00800FFEF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		028F66992380D00800FFEF75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		028F669B2380D00800FFEF75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		028F669E2380D00800FFEF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		028F66A12380D00800FFEF75 /* PuzzleGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PuzzleGame.xcdatamodel; sourceTree = "<group>"; };
@@ -55,6 +71,14 @@
 		028F66BE2380D00B00FFEF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		028F66CA2380D27400FFEF75 /* PuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
 		028F66CC2380E88100FFEF75 /* PuzzleBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleBoard.swift; sourceTree = "<group>"; };
+		02940BC323823600001C8214 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		02940BC6238259D2001C8214 /* Electrical_Sweep-Sweeper-1760111493.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electrical_Sweep-Sweeper-1760111493.mp3"; sourceTree = "<group>"; };
+		02940BC823832D3B001C8214 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		02BD6CDF2393319900D11329 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		02BD6CE12393365A00D11329 /* CoreDataManager+Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+Score.swift"; sourceTree = "<group>"; };
+		02BD6CE323933D6500D11329 /* ScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
+		02BD6CE523933F2D00D11329 /* DataReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReceiver.swift; sourceTree = "<group>"; };
+		02BD6CE723934C7200D11329 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,17 +129,19 @@
 		028F66962380D00800FFEF75 /* PuzzleGame */ = {
 			isa = PBXGroup;
 			children = (
+				02BD6CE323933D6500D11329 /* ScoreController.swift */,
+				02BD6CE523933F2D00D11329 /* DataReceiver.swift */,
+				02BD6CDE2393316100D11329 /* CoreData */,
+				02940BC523823A93001C8214 /* Utilities */,
 				028F66CF238203C800FFEF75 /* View */,
 				028F66CE238203BC00FFEF75 /* Model */,
 				028F66972380D00800FFEF75 /* AppDelegate.swift */,
-				028F66992380D00800FFEF75 /* SceneDelegate.swift */,
-				028F669B2380D00800FFEF75 /* ViewController.swift */,
-				028F66CA2380D27400FFEF75 /* PuzzleViewController.swift */,
+				02696B2523935D5B000753D3 /* SceneDelegate.swift */,
 				028F669D2380D00800FFEF75 /* Main.storyboard */,
-				028F66A32380D00B00FFEF75 /* Assets.xcassets */,
 				028F66A52380D00B00FFEF75 /* LaunchScreen.storyboard */,
+				028F66A32380D00B00FFEF75 /* Assets.xcassets */,
+				02940BC6238259D2001C8214 /* Electrical_Sweep-Sweeper-1760111493.mp3 */,
 				028F66A82380D00B00FFEF75 /* Info.plist */,
-				028F66A02380D00800FFEF75 /* PuzzleGame.xcdatamodeld */,
 			);
 			path = PuzzleGame;
 			sourceTree = "<group>";
@@ -149,8 +175,34 @@
 		028F66CF238203C800FFEF75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				028F669B2380D00800FFEF75 /* ViewController.swift */,
+				028F66CA2380D27400FFEF75 /* PuzzleViewController.swift */,
+				022A741E2388CBF000C6C823 /* FifteenPuzzleViewController.swift */,
+				020552E52390791900DE75CC /* TutorialsViewController.swift */,
+				020552E72391F48400DE75CC /* SettingsViewController.swift */,
+				02BD6CE723934C7200D11329 /* ScoreViewController.swift */,
+				02696B2323934E61000753D3 /* ScoreTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		02940BC523823A93001C8214 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				02940BC323823600001C8214 /* UIButton+Extension.swift */,
+				02940BC823832D3B001C8214 /* UIImage+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		02BD6CDE2393316100D11329 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				02BD6CDF2393319900D11329 /* CoreDataManager.swift */,
+				02BD6CE12393365A00D11329 /* CoreDataManager+Score.swift */,
+				028F66A02380D00800FFEF75 /* PuzzleGame.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +311,7 @@
 			files = (
 				028F66A72380D00B00FFEF75 /* LaunchScreen.storyboard in Resources */,
 				028F66A42380D00B00FFEF75 /* Assets.xcassets in Resources */,
+				02940BC7238259D2001C8214 /* Electrical_Sweep-Sweeper-1760111493.mp3 in Resources */,
 				028F669F2380D00800FFEF75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,10 +339,21 @@
 			files = (
 				028F66CD2380E88100FFEF75 /* PuzzleBoard.swift in Sources */,
 				028F66CB2380D27400FFEF75 /* PuzzleViewController.swift in Sources */,
+				02BD6CE22393365A00D11329 /* CoreDataManager+Score.swift in Sources */,
+				020552E82391F48400DE75CC /* SettingsViewController.swift in Sources */,
+				022A741F2388CBF000C6C823 /* FifteenPuzzleViewController.swift in Sources */,
 				028F669C2380D00800FFEF75 /* ViewController.swift in Sources */,
+				02696B2423934E61000753D3 /* ScoreTableViewCell.swift in Sources */,
+				02696B2623935D5C000753D3 /* SceneDelegate.swift in Sources */,
+				020552E62390791900DE75CC /* TutorialsViewController.swift in Sources */,
+				02BD6CE623933F2D00D11329 /* DataReceiver.swift in Sources */,
+				02BD6CE02393319900D11329 /* CoreDataManager.swift in Sources */,
+				02940BC923832D3B001C8214 /* UIImage+Extension.swift in Sources */,
 				028F66982380D00800FFEF75 /* AppDelegate.swift in Sources */,
-				028F669A2380D00800FFEF75 /* SceneDelegate.swift in Sources */,
+				02BD6CE423933D6500D11329 /* ScoreController.swift in Sources */,
 				028F66A22380D00800FFEF75 /* PuzzleGame.xcdatamodeld in Sources */,
+				02940BC423823600001C8214 /* UIButton+Extension.swift in Sources */,
+				02BD6CE823934C7200D11329 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
