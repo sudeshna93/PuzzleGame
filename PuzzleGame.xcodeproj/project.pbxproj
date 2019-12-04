@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		020552E62390791900DE75CC /* TutorialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020552E52390791900DE75CC /* TutorialsViewController.swift */; };
 		020552E82391F48400DE75CC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020552E72391F48400DE75CC /* SettingsViewController.swift */; };
+		021D46982394B35500155961 /* PuzzleBoard15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D46972394B35500155961 /* PuzzleBoard15.swift */; };
 		022A741F2388CBF000C6C823 /* FifteenPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A741E2388CBF000C6C823 /* FifteenPuzzleViewController.swift */; };
 		02696B2423934E61000753D3 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02696B2323934E61000753D3 /* ScoreTableViewCell.swift */; };
 		02696B2623935D5C000753D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02696B2523935D5B000753D3 /* SceneDelegate.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		020552E52390791900DE75CC /* TutorialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsViewController.swift; sourceTree = "<group>"; };
 		020552E72391F48400DE75CC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		021D46972394B35500155961 /* PuzzleBoard15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleBoard15.swift; sourceTree = "<group>"; };
 		022A741E2388CBF000C6C823 /* FifteenPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifteenPuzzleViewController.swift; sourceTree = "<group>"; };
 		02696B2323934E61000753D3 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
 		02696B2523935D5B000753D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				028F66CC2380E88100FFEF75 /* PuzzleBoard.swift */,
+				021D46972394B35500155961 /* PuzzleBoard15.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				028F66CD2380E88100FFEF75 /* PuzzleBoard.swift in Sources */,
 				028F66CB2380D27400FFEF75 /* PuzzleViewController.swift in Sources */,
+				021D46982394B35500155961 /* PuzzleBoard15.swift in Sources */,
 				02BD6CE22393365A00D11329 /* CoreDataManager+Score.swift in Sources */,
 				020552E82391F48400DE75CC /* SettingsViewController.swift in Sources */,
 				022A741F2388CBF000C6C823 /* FifteenPuzzleViewController.swift in Sources */,

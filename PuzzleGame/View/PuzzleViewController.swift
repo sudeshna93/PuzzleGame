@@ -86,7 +86,7 @@ class PuzzleViewController: UIViewController {
     
     @objc func updateTime(){
         counter = counter + 0.1
-        timerLabel.text = String(format: "%.1f", counter) + "s"
+        timerLabel.text = String(format: "%.2f", counter) + "s"
     }
     
     //shuffling the tiles
@@ -189,10 +189,10 @@ class PuzzleViewController: UIViewController {
 //        else{
 //            delegate?.update(with: info)
 //        }
-        let s = manager.create(time: Double(roundf(Float(counter))), type: "8Puzzle")
-        score.append(s)
+        let d = manager.create(time: (counter * 100).rounded() / 100, type: "8Puzzle")
+        score.append(d)
         print(score)
-        
+    
         
         
     }

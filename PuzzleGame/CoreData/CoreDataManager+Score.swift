@@ -27,7 +27,27 @@ extension CoreDataManager {
         let request : NSFetchRequest<Score> = Score.fetchRequest()
         
         //using predicate to fetch only 8puzzle scores
-        let predicate = NSPredicate(format: "type = %@", argumentArray: ["8Puzzle"])
+//        let predicate = NSPredicate(format: "type = %@", argumentArray: ["8Puzzle"])
+//        request.predicate = predicate
+
+        //use of context
+        do{
+            let result = try mainMOC.fetch(request)
+            return result
+        }
+        catch{
+            print("Failed: \(error)")
+        }
+        //return
+        return []
+    }
+    
+    func loadforFifteen() -> [Score]{
+        //fetch request
+        let request : NSFetchRequest<Score> = Score.fetchRequest()
+        
+        //using predicate to fetch only 8puzzle scores
+        let predicate = NSPredicate(format: "type = %@", argumentArray: ["15Puzzle"])
         request.predicate = predicate
 
         //use of context
@@ -41,6 +61,8 @@ extension CoreDataManager {
         //return
         return []
     }
+    
+    
     
     func save (){
         saveContext()

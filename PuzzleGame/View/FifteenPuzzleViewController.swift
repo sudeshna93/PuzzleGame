@@ -14,7 +14,7 @@ class FifteenPuzzleViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet var tiles: [UIButton]!
     @IBOutlet weak var boardView: UIView!
-    let puzzleBoard = PuzzleBoard()
+    let puzzleBoard = PuzzleBoard15()
     var buttonClick = false
     var nsTimer = Timer()
     var counter = Double()
@@ -37,6 +37,8 @@ class FifteenPuzzleViewController: UIViewController {
         self.timerLabel.text = "0.0 s"
         counter = 0.0
         shuffleButton(sender: sender)
+        
+      //  self.boardView.setNeedsLayout()
     }
     
     @IBAction func buttonslideAction(_ sender: UIButton) {
@@ -75,16 +77,17 @@ class FifteenPuzzleViewController: UIViewController {
     
     @objc func updateTime(){
            counter = counter + 0.1
-           timerLabel.text = String(format: "%.1f", counter) + "s"
+           timerLabel.text = String(format: "%.2f", counter) + "s"
        }
     
     //shuffling the tiles
     func shuffleButton(sender: UIButton){
             for _ in 0..<1000 {
-                let randomInt = Int.random(in: 0..<14)
+                let randomInt = Int.random(in: 0..<15)
                 switch (tiles![randomInt].tag) {
-                case 1...14:
+                case 1...15:
                     let position = puzzleBoard.getPositionRowandColumn(forTile: tiles![randomInt].tag)
+                    //print("QQQ ", tiles)
                     let bound = tiles[randomInt].bounds
                     if puzzleBoard.canTileSlidetoRight(atRow: position!.row, atColumn: position!.column){
                         puzzleBoard.slidetheTile(arRow: position!.row, atColumn: position!.column)
@@ -132,17 +135,16 @@ class FifteenPuzzleViewController: UIViewController {
            
            
            if puzzleBoard.canTileSlidetoRight(atRow: position!.row, atColumn: position!.column){
-               //center.x = center.x + bound.size.width + 1.0
                center.x = center.x + bound.size.width
            }
            else if puzzleBoard.canTileSlidetoLeft(atRow: position!.row, atColumn: position!.column){
-               center.x = center.x - bound.size.width - 0.5
+               center.x = center.x - bound.size.width
            }
            else if puzzleBoard.canTileSlidetoTop(atRow: position!.row, atColumn: position!.column){
-               center.y = center.y - bound.size.width - 0.3
+               center.y = center.y - bound.size.width
            }
            else if puzzleBoard.canTileSlidetoDown(atRow: position!.row, atColumn: position!.column){
-               center.y = center.y + bound.size.width + 0.5
+               center.y = center.y + bound.size.width 
            }
            else{
                slideFlag = false
@@ -179,8 +181,8 @@ class FifteenPuzzleViewController: UIViewController {
         //        else{
         //            delegate?.update(with: info)
         //        }
-        let s = manager.create(time: Double(roundf(Float(counter))), type: "15Puzzle")
-        score.append(s)
+        let d = manager.create(time: (counter * 100).rounded() / 100, type: "15Puzzle")
+        score.append(d)
         print(score)
         
         
@@ -213,7 +215,7 @@ class FifteenPuzzleViewController: UIViewController {
     func fillthenumber(){
         for v in view.subviews[2].subviews{
             if let imView = v as? UIButton {
-                for i in 1...14{
+                for i in 1...15{
                     if imView.tag == i{
                         imView.setTitle(" " + String(i), for: .normal)
                     }

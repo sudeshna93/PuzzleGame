@@ -22,6 +22,7 @@ class ScoreViewController: UIViewController {
         controller = ScoreController(self)
         //Fetching time from Coredata
         controller.loadScore()
+        
     }
     
     
@@ -39,13 +40,14 @@ extension ScoreViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = tableview.dequeueReusableCell(withIdentifier: reuseID) as! ScoreTableViewCell
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! ScoreTableViewCell
-        let s = controller.score[indexPath.row]
-        cell.scorelabel?.text = "Time taken : \(s.time) s"
+        //let s = controller.score[indexPath.row]
+        let sorted = controller.score.sorted(by: { (s1, s2) -> Bool in
+            return (s1.time ) < (s2.time)
+        })
+        cell.scorelabel?.text = "Time taken in : \(sorted[indexPath.row].time) s"
         
         return cell
     }
-    
-    
     
 }
 
@@ -56,7 +58,6 @@ extension ScoreViewController: DataReceiver {
     }
     
     func receive(_ info: ScoreDataTuple) {
-       print("MMMM ", info)
         controller.createScore(time: info.time, type: info.type)
     }
 }
