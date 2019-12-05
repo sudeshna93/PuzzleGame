@@ -86,7 +86,12 @@ class PuzzleViewController: UIViewController {
     
     @objc func updateTime(){
         counter = counter + 0.1
-        timerLabel.text = String(format: "%.2f", counter) + "s"
+        let hours = Int(counter) / 3600
+        let minutes = Int(counter) / 60 % 60
+        let seconds = Int(counter) % 60
+       // return String(format:"%2i:%2i:%2i", hours, minutes, seconds)
+        //timerLabel.text = String(format: "%.2f", counter) + "s"
+        timerLabel.text = String(format:"%2i:%2i:%2i",hours, minutes, seconds)
     }
     
     //shuffling the tiles

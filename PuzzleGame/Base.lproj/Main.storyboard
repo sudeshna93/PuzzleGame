@@ -70,7 +70,7 @@
                                             <constraint firstAttribute="width" constant="50" id="wBw-2N-zq9"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
-                                        <state key="normal" title="21">
+                                        <state key="normal" title="24">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -199,7 +199,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="M9U-xI-X9x">
                                 <rect key="frame" x="137" y="334" width="140" height="348"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj5-kH-gOr">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj5-kH-gOr" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -213,7 +213,7 @@
                                             <segue destination="zf8-Yn-jFG" kind="show" id="zQW-p8-twX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myd-oW-eMZ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myd-oW-eMZ" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="96" width="140" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -227,7 +227,7 @@
                                             <action selector="settingBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q7P-ln-7jp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoh-wN-y5D">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoh-wN-y5D" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="192" width="140" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -241,7 +241,7 @@
                                             <segue destination="iAi-xc-eDX" kind="presentation" modalPresentationStyle="overCurrentContext" id="g6c-5I-LXR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTl-Za-bNB">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTl-Za-bNB" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="288" width="140" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -308,7 +308,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28M-ea-7k1">
                                 <rect key="frame" x="47" y="288" width="320" height="320"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-YN-1F9" userLabel="1">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-YN-1F9" userLabel="1" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="1" y="1" width="104.5" height="104.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
@@ -320,7 +320,7 @@
                                             <action selector="buttonSlideAction:" destination="zf8-Yn-jFG" eventType="touchUpInside" id="kbi-ZD-BVN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PG-uU-gIK">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PG-uU-gIK" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="107.5" y="1" width="105" height="104.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
@@ -332,7 +332,7 @@
                                             <action selector="buttonSlideAction:" destination="zf8-Yn-jFG" eventType="touchUpInside" id="HB0-IO-0Sx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ul-xi-jHh">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ul-xi-jHh" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="213.5" y="1" width="104.5" height="104.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
@@ -344,7 +344,7 @@
                                             <action selector="buttonSlideAction:" destination="zf8-Yn-jFG" eventType="touchUpInside" id="W2u-17-2L6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKJ-Qt-7Fx">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKJ-Qt-7Fx" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="1" y="107.5" width="104.5" height="105"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
@@ -356,7 +356,7 @@
                                             <action selector="buttonSlideAction:" destination="zf8-Yn-jFG" eventType="touchUpInside" id="90J-Ch-xRe"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc5-eG-N9g">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc5-eG-N9g" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="107.5" y="107.5" width="105" height="105"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
@@ -368,7 +368,7 @@
                                             <action selector="buttonSlideAction:" destination="zf8-Yn-jFG" eventType="touchUpInside" id="eZa-Cz-xXb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cr-v3-59s">
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cr-v3-59s" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="213.5" y="107.5" width="104.5" height="105"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
@@ -380,7 +380,7 @@
                                             <action selector="buttonSlideAction:" destination="zf8-Yn-jFG" eventType="touchUpInside" id="mkN-0I-kI7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkw-4O-ysG">
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkw-4O-ysG" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="1" y="213.5" width="104.5" height="104.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
@@ -392,7 +392,7 @@
                                             <action selector="buttonSlideAction:" destination="zf8-Yn-jFG" eventType="touchUpInside" id="RrD-xG-dco"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-dx-GW5">
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-dx-GW5" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                         <rect key="frame" x="107.5" y="213.5" width="105" height="104.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
@@ -581,7 +581,7 @@
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZ0-kg-mxQ">
                                                     <rect key="frame" x="20" y="20" width="314" height="399.5"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <string key="text"> The object of the puzzle is to place tiles in order by making sliding moves that use empty space.  Use your finger to tap the tiles and place them in ascending order in shortest period of time.  You can always use Shuffle icon to start New Game.</string>
+                                                    <string key="text"> The object of the puzzle is to place tiles in order by making sliding moves that use empty space.  Use your finger to tap the tiles and place them in ascending order in shortest period of time.  You can always use Shuffle icon to start New Game And you can also play the same game with image. You can see your Achievement in Previous History.</string>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -765,10 +765,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghm-nJ-j9B">
-                                <rect key="frame" x="97" y="338" width="220" height="220"/>
+                                <rect key="frame" x="40" y="281" width="334" height="334"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHl-39-EjA" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -780,7 +780,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tla-dw-VMk" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="55" y="0.0" width="55" height="55"/>
+                                        <rect key="frame" x="83.5" y="0.0" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -792,7 +792,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXE-bd-a7b" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="110" y="0.0" width="55" height="55"/>
+                                        <rect key="frame" x="167" y="0.0" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -804,7 +804,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAT-ay-gO1" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="165" y="0.0" width="55" height="55"/>
+                                        <rect key="frame" x="250.5" y="0.0" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -816,7 +816,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGc-Nm-ZUD" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55" width="55" height="55"/>
+                                        <rect key="frame" x="0.0" y="83.5" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -828,7 +828,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho3-60-f2d" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="55" y="55" width="55" height="55"/>
+                                        <rect key="frame" x="83.5" y="83.5" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -840,7 +840,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofh-BH-N5N" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="110" y="55" width="55" height="55"/>
+                                        <rect key="frame" x="167" y="83.5" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -852,7 +852,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujP-0f-y3e" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="165" y="55" width="55" height="55"/>
+                                        <rect key="frame" x="250.5" y="83.5" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -864,7 +864,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elz-bz-nwl" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="110" width="55" height="55"/>
+                                        <rect key="frame" x="0.0" y="167" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -876,7 +876,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZc-bp-Zbd" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="55" y="110" width="55" height="55"/>
+                                        <rect key="frame" x="83.5" y="167" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -888,7 +888,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDY-SE-v70" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="165" width="55" height="55"/>
+                                        <rect key="frame" x="0.0" y="250.5" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -900,7 +900,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0x-Vh-l3I" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="110" y="110" width="55" height="55"/>
+                                        <rect key="frame" x="167" y="167" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -912,7 +912,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rQ-Cn-cq7" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="165" y="110" width="55" height="55"/>
+                                        <rect key="frame" x="250.5" y="167" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -924,7 +924,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hs-Cn-2Oe" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="55" y="165" width="55" height="55"/>
+                                        <rect key="frame" x="83.5" y="250.5" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -936,7 +936,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB3-PT-ha0" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                        <rect key="frame" x="110" y="165" width="55" height="55"/>
+                                        <rect key="frame" x="167" y="250.5" width="83.5" height="83.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1103,6 +1103,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="plz-V1-8dv" firstAttribute="trailing" secondItem="ghm-nJ-j9B" secondAttribute="trailing" constant="40" id="7Lq-fW-zGK"/>
                             <constraint firstItem="c36-Ab-psZ" firstAttribute="trailing" secondItem="plz-V1-8dv" secondAttribute="trailing" id="9T7-o9-Bfi"/>
                             <constraint firstItem="c36-Ab-psZ" firstAttribute="top" secondItem="plz-V1-8dv" secondAttribute="top" id="BHN-ui-V37"/>
                             <constraint firstItem="ghm-nJ-j9B" firstAttribute="centerY" secondItem="BTl-Vp-nb7" secondAttribute="centerY" id="BYB-OZ-TwE"/>
@@ -1113,6 +1114,7 @@
                             <constraint firstItem="Kda-HD-RE3" firstAttribute="leading" secondItem="plz-V1-8dv" secondAttribute="leading" constant="20" id="TVP-wg-qNR"/>
                             <constraint firstItem="plz-V1-8dv" firstAttribute="bottom" secondItem="Kda-HD-RE3" secondAttribute="bottom" constant="35" id="iAb-aB-b5Q"/>
                             <constraint firstItem="plz-V1-8dv" firstAttribute="trailing" secondItem="FVn-h1-0yS" secondAttribute="trailing" constant="20" id="iRy-M9-Kcb"/>
+                            <constraint firstItem="ghm-nJ-j9B" firstAttribute="leading" secondItem="plz-V1-8dv" secondAttribute="leading" constant="40" id="kIM-gu-9rX"/>
                             <constraint firstItem="FVn-h1-0yS" firstAttribute="bottom" secondItem="Kda-HD-RE3" secondAttribute="bottom" id="n6e-Lf-KKq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="plz-V1-8dv"/>

@@ -44,8 +44,12 @@ extension ScoreViewController: UITableViewDelegate, UITableViewDataSource{
         let sorted = controller.score.sorted(by: { (s1, s2) -> Bool in
             return (s1.time ) < (s2.time)
         })
-        cell.scorelabel?.text = "Time taken in : \(sorted[indexPath.row].time) s"
-        
+        let hours = Int(sorted[indexPath.row].time) / 3600
+        let minutes = Int(sorted[indexPath.row].time) / 60 % 60
+        let seconds = Int(sorted[indexPath.row].time) % 60
+       // cell.scorelabel?.text = "Time taken in : \(sorted[indexPath.row].time) s"
+        cell.scorelabel?.text = "Time taken: \(hours):\(minutes):\(seconds)" 
+        //String(format:"%2i:%2i:%2i",hours, minutes, seconds)
         return cell
     }
     
