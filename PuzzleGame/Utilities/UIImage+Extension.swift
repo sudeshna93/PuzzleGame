@@ -12,8 +12,10 @@ import CoreGraphics
 
 extension UIImage {
     
-   // func cropping()
-    
+   /* func cropping()
+     At first making a image a perfect square. Then Dividing a image into 9 square.
+     And returning a Araay of that 9 images.
+    */
     func divideImage() -> [UIImage]{
         
         let sizeOfImage = self.size
@@ -48,7 +50,10 @@ extension UIImage {
         }
         return images
     }
-    
+    /* func cropping()
+     At first making a image a perfect square. Then Dividing a image into 16 square.
+     And returning a Araay of that 16 images.
+    */
     func divideImage15() -> [UIImage]{
         
         let sizeOfImage = self.size

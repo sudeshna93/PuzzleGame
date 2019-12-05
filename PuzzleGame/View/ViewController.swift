@@ -18,6 +18,8 @@ class ViewController: UIViewController {
    
     @IBOutlet weak var playLabel: UILabel!
     @IBOutlet weak var demoImageview: UIImageView!
+    
+    //MARK: UIView LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         playSound()
@@ -31,7 +33,8 @@ class ViewController: UIViewController {
         }, completion: nil)
     }
 
-    
+    //MARK: Custom Functions
+    //playing sound at initial view loading.
     func playSound(){
         guard let url = Bundle.main.url(forResource: "Electrical_Sweep-Sweeper-1760111493", withExtension: "mp3") else{
             print("url not found")
@@ -48,6 +51,7 @@ class ViewController: UIViewController {
             guard let player = player else {
                 return
             }
+            //play the audio
             player.play()
         }
         
@@ -56,7 +60,7 @@ class ViewController: UIViewController {
         }
         
     }
-    
+    //ButtonAction: Redirecting to the settings ViewController
     @IBAction func settingBtnAction(_ sender: Any) {
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController
         self.navigationController?.pushViewController(vc!, animated: true)

@@ -460,7 +460,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x13-LL-OhG" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                <rect key="frame" x="323" y="108" width="90" height="64"/>
+                                <rect key="frame" x="323" y="108" width="90" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="oPv-kJ-wNF"/>
@@ -473,8 +473,8 @@
                                     <action selector="shufflebuttonAction:" destination="zf8-Yn-jFG" eventType="touchUpInside" id="8bk-Jc-RIx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r69-ev-Q9O">
-                                <rect key="frame" x="102" y="108" width="120" height="64"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:0:0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r69-ev-Q9O">
+                                <rect key="frame" x="148" y="108" width="120" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.93483323689999998" green="0.83134211970000005" blue="0.418033971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -485,7 +485,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch" translatesAutoresizingMaskIntoConstraints="NO" id="4uv-xZ-Hda">
-                                <rect key="frame" x="0.0" y="108" width="64" height="64"/>
+                                <rect key="frame" x="0.0" y="108" width="128" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pi-mr-PdI" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
                                 <rect key="frame" x="10" y="777" width="103" height="45"/>
@@ -505,7 +505,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="r69-ev-Q9O" firstAttribute="leading" secondItem="4uv-xZ-Hda" secondAttribute="trailing" constant="38" id="2NE-5P-E7d"/>
+                            <constraint firstItem="r69-ev-Q9O" firstAttribute="leading" secondItem="4uv-xZ-Hda" secondAttribute="trailing" constant="20" id="2NE-5P-E7d"/>
                             <constraint firstItem="r69-ev-Q9O" firstAttribute="top" secondItem="Drx-97-OwZ" secondAttribute="top" constant="20" id="3UU-Ks-xsF"/>
                             <constraint firstItem="28M-ea-7k1" firstAttribute="centerY" secondItem="W34-2P-zPg" secondAttribute="centerY" id="4d6-Qb-B7e"/>
                             <constraint firstItem="x13-LL-OhG" firstAttribute="top" secondItem="4uv-xZ-Hda" secondAttribute="top" id="9Fs-1m-89Z"/>
@@ -556,7 +556,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNL-id-S2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2060" y="101.19940029985008"/>
+            <point key="canvasLocation" x="2059.4202898550725" y="101.11607142857143"/>
         </scene>
         <!--Tutorials View Controller-->
         <scene sceneID="eqj-gv-fNt">
@@ -752,10 +752,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back1" translatesAutoresizingMaskIntoConstraints="NO" id="c36-Ab-psZ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                             </imageView>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZc-u2-bfu" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
-                                <rect key="frame" x="313" y="85" width="94" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZc-u2-bfu" customClass="ButtonExtension" customModule="PuzzleGame" customModuleProvider="target">
+                                <rect key="frame" x="305" y="110.5" width="107" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="101-uD-noo"/>
+                                    <constraint firstAttribute="height" constant="55" id="yWn-9F-hbT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <state key="normal" title="Shuffle">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1074,13 +1077,15 @@
                                     <action selector="insertImageAction:" destination="rlr-Oc-fmf" eventType="touchUpInside" id="0BM-iI-FbR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watch" translatesAutoresizingMaskIntoConstraints="NO" id="sxp-zR-8X0">
-                                <rect key="frame" x="0.0" y="91" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch" translatesAutoresizingMaskIntoConstraints="NO" id="sxp-zR-8X0">
+                                <rect key="frame" x="0.0" y="74" width="128" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSO-vC-keT">
-                                <rect key="frame" x="78" y="85" width="137" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:0:0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSO-vC-keT">
+                                <rect key="frame" x="142" y="113" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="iVb-Sd-RC9"/>
+                                    <constraint firstAttribute="height" constant="50" id="lGB-FC-Vmp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1103,19 +1108,25 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="sxp-zR-8X0" firstAttribute="leading" secondItem="plz-V1-8dv" secondAttribute="leading" id="1Lm-ZV-DbX"/>
                             <constraint firstItem="plz-V1-8dv" firstAttribute="trailing" secondItem="ghm-nJ-j9B" secondAttribute="trailing" constant="40" id="7Lq-fW-zGK"/>
+                            <constraint firstItem="HSO-vC-keT" firstAttribute="centerY" secondItem="sxp-zR-8X0" secondAttribute="centerY" id="7V8-hq-zJE"/>
                             <constraint firstItem="c36-Ab-psZ" firstAttribute="trailing" secondItem="plz-V1-8dv" secondAttribute="trailing" id="9T7-o9-Bfi"/>
                             <constraint firstItem="c36-Ab-psZ" firstAttribute="top" secondItem="plz-V1-8dv" secondAttribute="top" id="BHN-ui-V37"/>
                             <constraint firstItem="ghm-nJ-j9B" firstAttribute="centerY" secondItem="BTl-Vp-nb7" secondAttribute="centerY" id="BYB-OZ-TwE"/>
                             <constraint firstItem="FVn-h1-0yS" firstAttribute="top" secondItem="Kda-HD-RE3" secondAttribute="top" id="F02-WK-XkE"/>
                             <constraint firstItem="c36-Ab-psZ" firstAttribute="leading" secondItem="plz-V1-8dv" secondAttribute="leading" id="F8G-uT-Ddc"/>
+                            <constraint firstItem="plz-V1-8dv" firstAttribute="trailing" secondItem="bZc-u2-bfu" secondAttribute="trailing" constant="2" id="Jto-wt-m2X"/>
                             <constraint firstItem="ghm-nJ-j9B" firstAttribute="centerX" secondItem="BTl-Vp-nb7" secondAttribute="centerX" id="N1D-3Z-B53"/>
                             <constraint firstAttribute="bottom" secondItem="c36-Ab-psZ" secondAttribute="bottom" id="Sue-Su-lrR"/>
                             <constraint firstItem="Kda-HD-RE3" firstAttribute="leading" secondItem="plz-V1-8dv" secondAttribute="leading" constant="20" id="TVP-wg-qNR"/>
+                            <constraint firstItem="bZc-u2-bfu" firstAttribute="centerY" secondItem="sxp-zR-8X0" secondAttribute="centerY" id="boM-lB-C4V"/>
                             <constraint firstItem="plz-V1-8dv" firstAttribute="bottom" secondItem="Kda-HD-RE3" secondAttribute="bottom" constant="35" id="iAb-aB-b5Q"/>
                             <constraint firstItem="plz-V1-8dv" firstAttribute="trailing" secondItem="FVn-h1-0yS" secondAttribute="trailing" constant="20" id="iRy-M9-Kcb"/>
                             <constraint firstItem="ghm-nJ-j9B" firstAttribute="leading" secondItem="plz-V1-8dv" secondAttribute="leading" constant="40" id="kIM-gu-9rX"/>
                             <constraint firstItem="FVn-h1-0yS" firstAttribute="bottom" secondItem="Kda-HD-RE3" secondAttribute="bottom" id="n6e-Lf-KKq"/>
+                            <constraint firstItem="sxp-zR-8X0" firstAttribute="top" secondItem="plz-V1-8dv" secondAttribute="top" constant="30" id="pYd-UV-j2T"/>
+                            <constraint firstItem="HSO-vC-keT" firstAttribute="leading" secondItem="sxp-zR-8X0" secondAttribute="trailing" constant="14" id="qcd-tC-T8i"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="plz-V1-8dv"/>
                     </view>

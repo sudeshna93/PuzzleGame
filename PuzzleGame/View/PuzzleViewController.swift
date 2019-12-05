@@ -18,16 +18,19 @@ class PuzzleViewController: UIViewController {
     // represents state of the puzzle
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var boardView: UIView!
-    
+    //instance of data model.
     let puzzleBoard = PuzzleBoard()
     var buttonClick = false
     var nsTimer = Timer()
     var counter = Double()
     var delegate: DataReceiver?
     var info: ScoreDataTuple?
+    //represent coredata Class
     var manager = CoreDataManager()
+    //Instance of NSManagedObject
     var score: [Score] = []
     
+    //MARK:View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         //view.backgroundColor = UIColor.black
@@ -35,6 +38,7 @@ class PuzzleViewController: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
+        //whenever player left this viewcontroller invalidating the timer.
         self.nsTimer.invalidate()
     }
     
@@ -43,15 +47,15 @@ class PuzzleViewController: UIViewController {
         super.viewWillLayoutSubviews()
     }
     
+    //MARK: Button Actions
     @IBAction func shufflebuttonAction(_ sender: UIButton) {
-        self.timerLabel.text = "0.0.0"
+        self.timerLabel.text = "0:0:0"
         counter = 0.0
         shuffleButton(sender: sender)
-
-//
         // self.boardView.setNeedsLayout()
     }
     
+    //Fill the buttons with images and with Numbers.
     @IBAction func imageButtonAction(_ sender: UIButton) {
         if !buttonClick{
             guard let data = UIImage(named: String("imageExample")) else {
@@ -67,8 +71,9 @@ class PuzzleViewController: UIViewController {
             fillthenumber()
             buttonClick = false
         }
-        
     }
+
+    //slide the buttons inside the frames when click on a particular button.
     @IBAction func buttonSlideAction(_ sender: UIButton) {
         self.buttonClick = true
         if !nsTimer.isValid{
@@ -77,24 +82,24 @@ class PuzzleViewController: UIViewController {
         slidetheTile(sender: sender)
     }
     
+    //Redirecting to ScoreViewController to check previous score History
     @IBAction func scoreButtonAction(_ sender: Any) {
         let vc = ScoreViewController(nibName: "ScoreViewController", bundle: nil)
         navigationController?.show(vc, sender: nil)
         
         
     }
-    
+    //Updating time while player playing the game.And showing on timer label.
     @objc func updateTime(){
         counter = counter + 0.1
         let hours = Int(counter) / 3600
         let minutes = Int(counter) / 60 % 60
         let seconds = Int(counter) % 60
-       // return String(format:"%2i:%2i:%2i", hours, minutes, seconds)
         //timerLabel.text = String(format: "%.2f", counter) + "s"
         timerLabel.text = String(format:"%2i:%2i:%2i",hours, minutes, seconds)
     }
     
-    //shuffling the tiles
+    //shuffling the tiles by randomize the buttons inside the frame.
     func shuffleButton(sender: UIButton){
             for _ in 0..<1000 {
                 let randomInt = Int.random(in: 0..<8)
@@ -138,7 +143,7 @@ class PuzzleViewController: UIViewController {
         
         }
            
- //Slide the tiles on Button click
+ //Funstion for Slide the tiles on Button click
     func slidetheTile(sender: UIButton){
         let position = puzzleBoard.getPositionRowandColumn(forTile: sender.tag)
         var center = sender.center
@@ -148,7 +153,6 @@ class PuzzleViewController: UIViewController {
         
         
         if puzzleBoard.canTileSlidetoRight(atRow: position!.row, atColumn: position!.column){
-            //center.x = center.x + bound.size.width + 1.0
             center.x = center.x + bound.size.width
         }
         else if puzzleBoard.canTileSlidetoLeft(atRow: position!.row, atColumn: position!.column){
@@ -201,13 +205,14 @@ class PuzzleViewController: UIViewController {
         
         
     }
+    //Stop timer by invalidating it.
     func stopTimer() {
         guard nsTimer != nil else { return }
         nsTimer.invalidate()
        // nsTimer = nil
     }
     
-    //fill the images in button
+    //fill the images in button tiles.
     func filltheImages(with images: [UIImage]){
         guard images.count == 9 else{
             return
@@ -226,7 +231,7 @@ class PuzzleViewController: UIViewController {
         view.setNeedsLayout()
     }
     
-    
+    //Fill the buton tiles with numbers.
     func fillthenumber(){
         for v in view.subviews[2].subviews{
              if let imView = v as? UIButton {

@@ -14,13 +14,16 @@ class FifteenPuzzleViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet var tiles: [UIButton]!
     @IBOutlet weak var boardView: UIView!
+    //Instance of a data model.
     let puzzleBoard = PuzzleBoard15()
     var buttonClick = false
     var nsTimer = Timer()
     var counter = Double()
     var delegate: DataReceiver?
     var info: ScoreDataTuple?
+    //represent coredata Class
     var manager = CoreDataManager()
+    //Instance of NSManagedObject
     var score: [Score] = []
     
     //MARK: View Life Cycle
@@ -34,13 +37,13 @@ class FifteenPuzzleViewController: UIViewController {
        
     //MARK: IBActions
     @IBAction func shuffleBtnAction(_ sender: UIButton) {
-        self.timerLabel.text = "0.0.0"
+        self.timerLabel.text = "0:0:0"
         counter = 0.0
         shuffleButton(sender: sender)
         
       //  self.boardView.setNeedsLayout()
     }
-    
+    //slide the buttons inside the frames when click on a particular button.
     @IBAction func buttonslideAction(_ sender: UIButton) {
         self.buttonClick = true
         if !nsTimer.isValid{
@@ -48,7 +51,7 @@ class FifteenPuzzleViewController: UIViewController {
         }
         slidetheTile(sender: sender)
     }
-    
+    //Fill the buttons with images and with Numbers.
     @IBAction func insertImageAction(_ sender: UIButton) {
         if !buttonClick{
             guard let data = UIImage(named: String("imageExample")) else {
@@ -66,7 +69,7 @@ class FifteenPuzzleViewController: UIViewController {
         }
         
     }
-    
+    //Redirecting to ScoreViewController to check previous score History
     @IBAction func scoreBtnAction(_ sender: Any) {
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ScoreViewController") as? ScoreViewController
         self.navigationController?.pushViewController(vc!, animated: true)
@@ -74,7 +77,7 @@ class FifteenPuzzleViewController: UIViewController {
         
     }
     //MARK: Custom functions
-    
+    //Updating time while player playing the game.And showing on timer label.
     @objc func updateTime(){
            counter = counter + 0.1
            let hours = Int(counter) / 3600
@@ -85,7 +88,7 @@ class FifteenPuzzleViewController: UIViewController {
 
        }
     
-    //shuffling the tiles
+    //shuffling the tiles by randomize the buttons inside the frame.
     func shuffleButton(sender: UIButton){
             for _ in 0..<1000 {
                 let randomInt = Int.random(in: 0..<15)
@@ -130,7 +133,7 @@ class FifteenPuzzleViewController: UIViewController {
         
         }
     
-    //Slide the tiles on Button click
+    //Slide the tiles on Button click inside the frame.
        func slidetheTile(sender: UIButton){
            let position = puzzleBoard.getPositionRowandColumn(forTile: sender.tag)
            var center = sender.center
@@ -170,11 +173,9 @@ class FifteenPuzzleViewController: UIViewController {
                    
                    //show alert on Completion of game
                    self.present(alert, animated: true, completion: nil)
-                   
-                   
+                  
                }
            }
-           
        }
     
     //Saving the time in CoreData
@@ -188,9 +189,6 @@ class FifteenPuzzleViewController: UIViewController {
         //        }
         let d = manager.create(time: (counter * 100).rounded() / 100, type: "15Puzzle")
         score.append(d)
-        print(score)
-        
-        
         
     }
     //Stop timer by invalidate it and display the time taken by player.
@@ -199,7 +197,7 @@ class FifteenPuzzleViewController: UIViewController {
         nsTimer.invalidate()
         // nsTimer = nil
     }
-    
+    //fill the images in button tiles.
     func filltheImages(with images: [UIImage]){
         guard images.count == 16 else{
             return
@@ -216,7 +214,7 @@ class FifteenPuzzleViewController: UIViewController {
         }
         view.setNeedsLayout()
     }
-    
+    //Fill the buton tiles with numbers.
     func fillthenumber(){
         for v in view.subviews[2].subviews{
             if let imView = v as? UIButton {
