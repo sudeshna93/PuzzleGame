@@ -9,7 +9,6 @@
 import UIKit
 import CoreGraphics
 import CoreImage
-import AVFoundation
 
 class PuzzleViewController: UIViewController {
     
@@ -19,9 +18,6 @@ class PuzzleViewController: UIViewController {
     // represents state of the puzzle
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var boardView: UIView!
-    var audioPlayer = AVAudioPlayer()
-//    let pianoSound = URL(fileURLWithPath: Bundle.main.path(forResource: "Air Horn-SoundBible.com-964603082", ofType: "mp3")!)
-
     
     let puzzleBoard = PuzzleBoard()
     var buttonClick = false
@@ -32,27 +28,27 @@ class PuzzleViewController: UIViewController {
     var manager = CoreDataManager()
     var score: [Score] = []
     
-    //MARK: View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         //view.backgroundColor = UIColor.black
         //self.boardConstraints.isActive = nil
-        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        //stop the timer by invalidate it when player left this view
         self.nsTimer.invalidate()
     }
+    
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
     }
     
     @IBAction func shufflebuttonAction(_ sender: UIButton) {
-        self.timerLabel.text = "0:0:0 s"
+        self.timerLabel.text = "0.0 s"
         counter = 0.0
         shuffleButton(sender: sender)
+
+//
         // self.boardView.setNeedsLayout()
     }
     
@@ -87,16 +83,11 @@ class PuzzleViewController: UIViewController {
         
         
     }
-    //When player start to play counter will be increases per sec and shows the time in timerLabel "hrs:mins:secs" wise.
+    
     @objc func updateTime(){
         counter = counter + 0.1
-        let hours = Int(counter) / 3600
-        let minutes = Int(counter) / 60 % 60
-        let seconds = Int(counter) % 60
-      //  timerLabel.text = String(format: "%.2f", counter) + "s"
-        timerLabel.text = String(format: "%2i:%2i:%2i", hours, minutes, seconds) 
+        timerLabel.text = String(format: "%.2f", counter) + "s"
     }
-   
     
     //shuffling the tiles
     func shuffleButton(sender: UIButton){
@@ -144,14 +135,13 @@ class PuzzleViewController: UIViewController {
            
  //Slide the tiles on Button click
     func slidetheTile(sender: UIButton){
-        
         let position = puzzleBoard.getPositionRowandColumn(forTile: sender.tag)
         var center = sender.center
         var bound = sender.bounds
         var slideFlag = true
         buttonClick = true
         
-    
+        
         if puzzleBoard.canTileSlidetoRight(atRow: position!.row, atColumn: position!.column){
             //center.x = center.x + bound.size.width + 1.0
             center.x = center.x + bound.size.width
@@ -206,14 +196,13 @@ class PuzzleViewController: UIViewController {
         
         
     }
-    //Stop Timer By making it invalidate.
     func stopTimer() {
         guard nsTimer != nil else { return }
         nsTimer.invalidate()
        // nsTimer = nil
     }
     
-    //fill the images in tiles button
+    //fill the images in button
     func filltheImages(with images: [UIImage]){
         guard images.count == 9 else{
             return
@@ -232,7 +221,7 @@ class PuzzleViewController: UIViewController {
         view.setNeedsLayout()
     }
     
-    //fill the tile Buttons with numbers
+    
     func fillthenumber(){
         for v in view.subviews[2].subviews{
              if let imView = v as? UIButton {

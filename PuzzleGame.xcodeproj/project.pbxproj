@@ -26,7 +26,6 @@
 		02940BC423823600001C8214 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02940BC323823600001C8214 /* UIButton+Extension.swift */; };
 		02940BC7238259D2001C8214 /* Electrical_Sweep-Sweeper-1760111493.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02940BC6238259D2001C8214 /* Electrical_Sweep-Sweeper-1760111493.mp3 */; };
 		02940BC923832D3B001C8214 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02940BC823832D3B001C8214 /* UIImage+Extension.swift */; };
-		02AABCDB23988A89005EAF0A /* Air Horn-SoundBible.com-964603082.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02AABCDA23988A89005EAF0A /* Air Horn-SoundBible.com-964603082.mp3 */; };
 		02BD6CE02393319900D11329 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CDF2393319900D11329 /* CoreDataManager.swift */; };
 		02BD6CE22393365A00D11329 /* CoreDataManager+Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CE12393365A00D11329 /* CoreDataManager+Score.swift */; };
 		02BD6CE423933D6500D11329 /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CE323933D6500D11329 /* ScoreController.swift */; };
@@ -77,7 +76,6 @@
 		02940BC323823600001C8214 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		02940BC6238259D2001C8214 /* Electrical_Sweep-Sweeper-1760111493.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Electrical_Sweep-Sweeper-1760111493.mp3"; sourceTree = "<group>"; };
 		02940BC823832D3B001C8214 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		02AABCDA23988A89005EAF0A /* Air Horn-SoundBible.com-964603082.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Air Horn-SoundBible.com-964603082.mp3"; sourceTree = "<group>"; };
 		02BD6CDF2393319900D11329 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		02BD6CE12393365A00D11329 /* CoreDataManager+Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+Score.swift"; sourceTree = "<group>"; };
 		02BD6CE323933D6500D11329 /* ScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				028F669D2380D00800FFEF75 /* Main.storyboard */,
 				028F66A52380D00B00FFEF75 /* LaunchScreen.storyboard */,
 				028F66A32380D00B00FFEF75 /* Assets.xcassets */,
-				02AABCDA23988A89005EAF0A /* Air Horn-SoundBible.com-964603082.mp3 */,
 				02940BC6238259D2001C8214 /* Electrical_Sweep-Sweeper-1760111493.mp3 */,
 				028F66A82380D00B00FFEF75 /* Info.plist */,
 			);
@@ -316,7 +313,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				028F66A72380D00B00FFEF75 /* LaunchScreen.storyboard in Resources */,
-				02AABCDB23988A89005EAF0A /* Air Horn-SoundBible.com-964603082.mp3 in Resources */,
 				028F66A42380D00B00FFEF75 /* Assets.xcassets in Resources */,
 				02940BC7238259D2001C8214 /* Electrical_Sweep-Sweeper-1760111493.mp3 in Resources */,
 				028F669F2380D00800FFEF75 /* Main.storyboard in Resources */,

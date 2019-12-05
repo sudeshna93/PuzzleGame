@@ -26,9 +26,9 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        UIView.animate(withDuration: 0.5, delay: 0.0, options: [.autoreverse, .repeat], animations: {() -> Void in
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: [.autoreverse, .repeat], animations: {
             self.playLabel.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
-        }, completion: { _ in })
+        }, completion: nil)
     }
 
     
