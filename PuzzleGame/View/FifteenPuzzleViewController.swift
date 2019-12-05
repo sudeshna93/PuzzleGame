@@ -34,7 +34,7 @@ class FifteenPuzzleViewController: UIViewController {
        
     //MARK: IBActions
     @IBAction func shuffleBtnAction(_ sender: UIButton) {
-        self.timerLabel.text = "0.0 s"
+        self.timerLabel.text = "0.0.0"
         counter = 0.0
         shuffleButton(sender: sender)
         
