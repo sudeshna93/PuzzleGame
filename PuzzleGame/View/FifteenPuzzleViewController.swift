@@ -41,7 +41,6 @@ class FifteenPuzzleViewController: UIViewController {
         counter = 0.0
         shuffleButton(sender: sender)
         
-      //  self.boardView.setNeedsLayout()
     }
     //slide the buttons inside the frames when click on a particular button.
     @IBAction func buttonslideAction(_ sender: UIButton) {
@@ -95,7 +94,6 @@ class FifteenPuzzleViewController: UIViewController {
                 switch (tiles![randomInt].tag) {
                 case 1...15:
                     let position = puzzleBoard.getPositionRowandColumn(forTile: tiles![randomInt].tag)
-                    //print("QQQ ", tiles)
                     let bound = tiles[randomInt].bounds
                     if puzzleBoard.canTileSlidetoRight(atRow: position!.row, atColumn: position!.column){
                         puzzleBoard.slidetheTile(arRow: position!.row, atColumn: position!.column)

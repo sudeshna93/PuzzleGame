@@ -49,7 +49,7 @@ class PuzzleViewController: UIViewController {
     
     //MARK: Button Actions
     @IBAction func shufflebuttonAction(_ sender: UIButton) {
-        self.timerLabel.text = "0:0:0"
+        self.timerLabel.text = " 0: 0: 0"
         counter = 0.0
         shuffleButton(sender: sender)
         // self.boardView.setNeedsLayout()

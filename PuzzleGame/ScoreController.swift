@@ -38,6 +38,17 @@ class ScoreController: ScoreControllerProtocol {
         view.update()
     }
     
+    func test() {
+        // load 8s
+        print(manager.load("8Puzzle").count)
+        
+        // load 15s
+        print(manager.load("15Puzzle").count)
+        
+        // load all
+        print(manager.load().count)
+    }
+    
     
     
 }

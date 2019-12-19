@@ -174,7 +174,95 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B87-rd-cSM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478.26086956521743" y="798.88392857142856"/>
+            <point key="canvasLocation" x="119" y="842"/>
+        </scene>
+        <!--Post View Controller-->
+        <scene sceneID="Z3Q-Je-VZh">
+            <objects>
+                <viewController storyboardIdentifier="PostViewController" id="6QW-Na-OKC" customClass="PostViewController" customModule="PuzzleGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iSp-cj-JqR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06Q-4h-fpq">
+                                <rect key="frame" x="107" y="693" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7U3-dW-iqN"/>
+                                    <constraint firstAttribute="height" constant="30" id="B2X-Ol-Vhu"/>
+                                </constraints>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postButtonAction:" destination="6QW-Na-OKC" eventType="touchUpInside" id="knz-Ej-JCA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07h-ot-py6">
+                                <rect key="frame" x="107" y="810" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BLb-yW-Cuj"/>
+                                    <constraint firstAttribute="height" constant="30" id="RwT-R0-oW1"/>
+                                </constraints>
+                                <state key="normal" title="SignOut"/>
+                                <connections>
+                                    <action selector="signOutAction:" destination="6QW-Na-OKC" eventType="touchUpInside" id="ZwH-Tb-6KY"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dqZ-37-ERg">
+                                <rect key="frame" x="87" y="155" width="240" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="VNh-lo-ZGc"/>
+                                    <constraint firstAttribute="width" constant="240" id="ZcP-9Q-L52"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dqZ-37-ERg" firstAttribute="centerX" secondItem="iSp-cj-JqR" secondAttribute="centerX" id="5WU-p1-42S"/>
+                            <constraint firstItem="06Q-4h-fpq" firstAttribute="centerX" secondItem="iSp-cj-JqR" secondAttribute="centerX" id="X27-6k-Fqw"/>
+                            <constraint firstItem="qTy-Y7-aMe" firstAttribute="bottom" secondItem="07h-ot-py6" secondAttribute="bottom" constant="22" id="chE-7k-OFL"/>
+                            <constraint firstItem="07h-ot-py6" firstAttribute="centerX" secondItem="iSp-cj-JqR" secondAttribute="centerX" id="diQ-r1-4ai"/>
+                            <constraint firstItem="07h-ot-py6" firstAttribute="centerX" secondItem="06Q-4h-fpq" secondAttribute="centerX" id="i76-dT-DRk"/>
+                            <constraint firstItem="dqZ-37-ERg" firstAttribute="centerY" secondItem="iSp-cj-JqR" secondAttribute="centerY" constant="-200" id="sLz-Ht-r7B"/>
+                            <constraint firstItem="07h-ot-py6" firstAttribute="top" secondItem="06Q-4h-fpq" secondAttribute="bottom" constant="87" id="zCx-Hw-9yB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qTy-Y7-aMe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0ag-Cy-5bd"/>
+                    <connections>
+                        <outlet property="profileImg" destination="dqZ-37-ERg" id="9ry-fz-TMv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoI-Yh-f0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.753623188406" y="1684.8214285714284"/>
+        </scene>
+        <!--Share View Controller-->
+        <scene sceneID="hyy-69-0uy">
+            <objects>
+                <viewController storyboardIdentifier="ShareViewController" id="0Vq-jw-E30" customClass="ShareViewController" customModule="PuzzleGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b3O-kk-kfC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rL1-VT-VuO">
+                                <rect key="frame" x="126" y="703" width="162" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="shareButtonAction:" destination="0Vq-jw-E30" eventType="touchUpInside" id="4fK-Pf-xWV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gxt-rv-z1Q"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8wu-Y1-PYX"/>
+                    <connections>
+                        <segue destination="6QW-Na-OKC" kind="show" identifier="toMessages" id="tt8-b8-FWy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZP-jK-vyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="1685"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -251,6 +339,9 @@
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Share"/>
+                                        <connections>
+                                            <segue destination="0Vq-jw-E30" kind="show" id="gf2-py-s61"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -473,7 +564,7 @@
                                     <action selector="shufflebuttonAction:" destination="zf8-Yn-jFG" eventType="touchUpInside" id="8bk-Jc-RIx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:0:0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r69-ev-Q9O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0: 0: 0" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r69-ev-Q9O">
                                 <rect key="frame" x="148" y="108" width="120" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.93483323689999998" green="0.83134211970000005" blue="0.418033971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -657,7 +748,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3U-RK-5lL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2044.9275362318842" y="843.75"/>
+            <point key="canvasLocation" x="3536" y="1027"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="Z0J-Xo-Qhd">
@@ -739,7 +830,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4n-8O-4QM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3186.9565217391305" y="842.41071428571422"/>
+            <point key="canvasLocation" x="4665" y="810"/>
         </scene>
         <!--Fifteen Puzzle View Controller-->
         <scene sceneID="NQm-HA-uTg">

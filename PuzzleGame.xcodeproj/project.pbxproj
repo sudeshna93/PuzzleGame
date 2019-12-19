@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		022A741F2388CBF000C6C823 /* FifteenPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A741E2388CBF000C6C823 /* FifteenPuzzleViewController.swift */; };
 		02696B2423934E61000753D3 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02696B2323934E61000753D3 /* ScoreTableViewCell.swift */; };
 		02696B2623935D5C000753D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02696B2523935D5B000753D3 /* SceneDelegate.swift */; };
+		0288BC07239DE416005CF6D5 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0288BC06239DE416005CF6D5 /* ShareViewController.swift */; };
 		028F66982380D00800FFEF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028F66972380D00800FFEF75 /* AppDelegate.swift */; };
 		028F669C2380D00800FFEF75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028F669B2380D00800FFEF75 /* ViewController.swift */; };
 		028F669F2380D00800FFEF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028F669D2380D00800FFEF75 /* Main.storyboard */; };
@@ -31,6 +32,9 @@
 		02BD6CE423933D6500D11329 /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CE323933D6500D11329 /* ScoreController.swift */; };
 		02BD6CE623933F2D00D11329 /* DataReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CE523933F2D00D11329 /* DataReceiver.swift */; };
 		02BD6CE823934C7200D11329 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD6CE723934C7200D11329 /* ScoreViewController.swift */; };
+		02DBB88523A402DB0037B798 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DBB88423A402DB0037B798 /* PostViewController.swift */; };
+		02ECC213239F082A00D979D4 /* NSNotification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ECC212239F082A00D979D4 /* NSNotification+Extension.swift */; };
+		5AB98354FDB5CE48CE0216B7 /* Pods_PuzzleGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD62E86A1173AC0F6C22FDD /* Pods_PuzzleGame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,7 @@
 		022A741E2388CBF000C6C823 /* FifteenPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifteenPuzzleViewController.swift; sourceTree = "<group>"; };
 		02696B2323934E61000753D3 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
 		02696B2523935D5B000753D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0288BC06239DE416005CF6D5 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		028F66942380D00800FFEF75 /* PuzzleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		028F66972380D00800FFEF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		028F669B2380D00800FFEF75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +86,11 @@
 		02BD6CE323933D6500D11329 /* ScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
 		02BD6CE523933F2D00D11329 /* DataReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReceiver.swift; sourceTree = "<group>"; };
 		02BD6CE723934C7200D11329 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		02DBB88423A402DB0037B798 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		02ECC212239F082A00D979D4 /* NSNotification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extension.swift"; sourceTree = "<group>"; };
+		0673BE82271A93E3BDF12C3B /* Pods-PuzzleGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleGame.debug.xcconfig"; path = "Target Support Files/Pods-PuzzleGame/Pods-PuzzleGame.debug.xcconfig"; sourceTree = "<group>"; };
+		7440168E08583BC0B19FCD2A /* Pods-PuzzleGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzleGame.release.xcconfig"; path = "Target Support Files/Pods-PuzzleGame/Pods-PuzzleGame.release.xcconfig"; sourceTree = "<group>"; };
+		EBD62E86A1173AC0F6C22FDD /* Pods_PuzzleGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzleGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB98354FDB5CE48CE0216B7 /* Pods_PuzzleGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +126,8 @@
 				028F66B02380D00B00FFEF75 /* PuzzleGameTests */,
 				028F66BB2380D00B00FFEF75 /* PuzzleGameUITests */,
 				028F66952380D00800FFEF75 /* Products */,
+				D07A642EEC560EFDB15E60E6 /* Pods */,
+				3E9864ADC24D09D3B3AF7C8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +198,8 @@
 				020552E72391F48400DE75CC /* SettingsViewController.swift */,
 				02BD6CE723934C7200D11329 /* ScoreViewController.swift */,
 				02696B2323934E61000753D3 /* ScoreTableViewCell.swift */,
+				0288BC06239DE416005CF6D5 /* ShareViewController.swift */,
+				02DBB88423A402DB0037B798 /* PostViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +209,7 @@
 			children = (
 				02940BC323823600001C8214 /* UIButton+Extension.swift */,
 				02940BC823832D3B001C8214 /* UIImage+Extension.swift */,
+				02ECC212239F082A00D979D4 /* NSNotification+Extension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -208,6 +224,23 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		3E9864ADC24D09D3B3AF7C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBD62E86A1173AC0F6C22FDD /* Pods_PuzzleGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D07A642EEC560EFDB15E60E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0673BE82271A93E3BDF12C3B /* Pods-PuzzleGame.debug.xcconfig */,
+				7440168E08583BC0B19FCD2A /* Pods-PuzzleGame.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 028F66C12380D00B00FFEF75 /* Build configuration list for PBXNativeTarget "PuzzleGame" */;
 			buildPhases = (
+				A110774E45ECEAF2984BA34E /* [CP] Check Pods Manifest.lock */,
 				028F66902380D00800FFEF75 /* Sources */,
 				028F66912380D00800FFEF75 /* Frameworks */,
 				028F66922380D00800FFEF75 /* Resources */,
+				1025FF0B961F3B20955D1D80 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,18 +370,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1025FF0B961F3B20955D1D80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzleGame/Pods-PuzzleGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuzzleGame/Pods-PuzzleGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuzzleGame/Pods-PuzzleGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A110774E45ECEAF2984BA34E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuzzleGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		028F66902380D00800FFEF75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				028F66CD2380E88100FFEF75 /* PuzzleBoard.swift in Sources */,
+				02ECC213239F082A00D979D4 /* NSNotification+Extension.swift in Sources */,
 				028F66CB2380D27400FFEF75 /* PuzzleViewController.swift in Sources */,
 				021D46982394B35500155961 /* PuzzleBoard15.swift in Sources */,
 				02BD6CE22393365A00D11329 /* CoreDataManager+Score.swift in Sources */,
 				020552E82391F48400DE75CC /* SettingsViewController.swift in Sources */,
 				022A741F2388CBF000C6C823 /* FifteenPuzzleViewController.swift in Sources */,
+				0288BC07239DE416005CF6D5 /* ShareViewController.swift in Sources */,
 				028F669C2380D00800FFEF75 /* ViewController.swift in Sources */,
+				02DBB88523A402DB0037B798 /* PostViewController.swift in Sources */,
 				02696B2423934E61000753D3 /* ScoreTableViewCell.swift in Sources */,
 				02696B2623935D5C000753D3 /* SceneDelegate.swift in Sources */,
 				020552E62390791900DE75CC /* TutorialsViewController.swift in Sources */,
@@ -528,6 +608,7 @@
 		};
 		028F66C22380D00B00FFEF75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0673BE82271A93E3BDF12C3B /* Pods-PuzzleGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +627,7 @@
 		};
 		028F66C32380D00B00FFEF75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7440168E08583BC0B19FCD2A /* Pods-PuzzleGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

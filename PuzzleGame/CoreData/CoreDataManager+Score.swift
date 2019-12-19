@@ -22,14 +22,18 @@ extension CoreDataManager {
         return score
     }
     
-    func load() -> [Score]{
+    func load(_ type: String? = nil) -> [Score]{
         //fetch request
         let request : NSFetchRequest<Score> = Score.fetchRequest()
         
         //using predicate to fetch only 8puzzle scores
-//        let predicate = NSPredicate(format: "type = %@", argumentArray: ["8Puzzle"])
-//        request.predicate = predicate
-
+        if let type = type {
+            let predicate = NSPredicate(format: "type = %@", type)
+            request.predicate = predicate
+        }
+        
+        let sort = NSSortDescriptor(key: "time", ascending:true)
+        request.sortDescriptors = [sort]
         //use of context
         do{
             let result = try mainMOC.fetch(request)
@@ -38,7 +42,7 @@ extension CoreDataManager {
         catch{
             print("Failed: \(error)")
         }
-        //return
+        
         return []
     }
     

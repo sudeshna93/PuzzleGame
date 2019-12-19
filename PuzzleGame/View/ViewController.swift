@@ -32,6 +32,11 @@ class ViewController: UIViewController {
             self.playLabel.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
         }, completion: nil)
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.playLabel.transform = .identity
+    }
 
     //MARK: Custom Functions
     //playing sound at initial view loading.

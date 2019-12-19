@@ -8,15 +8,56 @@
 
 import UIKit
 import CoreData
+import FacebookCore
+import FacebookShare
+
+let FBSDKAppDelegate = ApplicationDelegate.shared
+typealias FBSDKSettings = Settings
+
+enum FBConstants {
+    static let appID = "2712561765477602"
+}
+
+class dummy: ScoreViewProtocol {
+    func update() { }
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
 
-
+    /*To post-process the results from actions that require to switch to the native Facebook app or Safari, such as Facebook Login or Facebook Dialogs,we need to connect AppDelegate class to the FBSDKApplicationDelegate object.
+    */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        FBSDKSettings.appID = FBConstants.appID
+        FBSDKAppDelegate.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didSignOut), name: .signout, object: nil)
+    
+        
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:] ) -> Bool{
+        let source = options[.sourceApplication] as? String
+        let annotation = options[.annotation]
+        
+        return FBSDKAppDelegate.application(app, open: url, sourceApplication: source, annotation: annotation)
+       // return FBSDKAppDelegate.application(app, open: url, options: options)
+    }
+    
+    @objc
+    func didSignOut() {
+        AccessToken.current = nil
+        
+        //immediately send them back to the signin screen
+        let root = window?.rootViewController as! UINavigationController
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let signInVC = storyboard.instantiateViewController(identifier: "ShareViewController")
+        root.setViewControllers([signInVC], animated: true)
+        
     }
 
     // MARK: UISceneSession Lifecycle

@@ -40,16 +40,15 @@ extension ScoreViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = tableview.dequeueReusableCell(withIdentifier: reuseID) as! ScoreTableViewCell
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as! ScoreTableViewCell
-        //let s = controller.score[indexPath.row]
-        let sorted = controller.score.sorted(by: { (s1, s2) -> Bool in
-            return (s1.time ) < (s2.time)
-        })
-        let hours = Int(sorted[indexPath.row].time) / 3600
-        let minutes = Int(sorted[indexPath.row].time) / 60 % 60
-        let seconds = Int(sorted[indexPath.row].time) % 60
-       // cell.scorelabel?.text = "Time taken in : \(sorted[indexPath.row].time) s"
-        cell.scorelabel?.text = "Time taken: \(hours):\(minutes):\(seconds)" 
-        //String(format:"%2i:%2i:%2i",hours, minutes, seconds)
+        
+        
+        let time = controller.score[indexPath.row].time
+        let type = controller.score[indexPath.row].type
+        let hours = Int(time) / 3600
+        let minutes = Int(time / 60) % 60
+        let seconds = Int(time) % 60
+        cell.scorelabel?.text = "Time taken: \(hours):\(minutes):\(seconds)" + " of: \(type ?? " "))"
+        
         return cell
     }
     

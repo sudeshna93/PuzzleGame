@@ -20,7 +20,7 @@ class PuzzleBoard15{
     let rows = 4
     let cols = 4
     
-    //swap tiles
+    //swap tiles with the blank space.
     func switchTiles(fromRow r1: Int, Column c1: Int, toRow r2: Int, Column c2: Int){
         state15[r2][c2] = state15[r1][c1]
         state15[r1][c1] = 0
@@ -30,7 +30,7 @@ class PuzzleBoard15{
     func getTile(atRow r: Int, atColumn c: Int) -> Int{
         return state15[r][c]
     }
-    
+    //Get the position for a Particular tile
     func getPositionRowandColumn(forTile tile: Int) -> (row: Int, column: Int)?{
         for i in 0..<rows{
             for j in 0..<cols{
@@ -80,7 +80,7 @@ class PuzzleBoard15{
     func canTileSlide(arRow r: Int, atColumn c: Int) -> Bool{
         return ( canTileSlidetoTop(atRow: r, atColumn: c) || canTileSlidetoDown(atRow: r, atColumn: c) || canTileSlidetoLeft(atRow: r, atColumn: c) || canTileSlidetoRight(atRow: r, atColumn: c))
     }
-    
+    //If the tile can be slidable in any direct then change the position of tile by changing row and column position.
     func slidetheTile(arRow r : Int, atColumn c: Int){
         if ( canTileSlide(arRow: r, atColumn: c)) {
             if (canTileSlidetoTop(atRow: r, atColumn: c)){
@@ -99,7 +99,6 @@ class PuzzleBoard15{
     }
     
     func resetBoard() {
-        
         var set = 1
         for i in 0..<rows{
             for j in 0..<cols{
